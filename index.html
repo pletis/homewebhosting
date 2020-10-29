@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Blockchain based wallet</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+   <!-- favicons -->
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+   <!-- favicons -->
+   <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+   <link rel="stylesheet" type="text/css" href="../static/css/custom-responsive-style.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+   <script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+   <script type="text/javascript" src="../static/js/all-plugins.js"></script>
+   <script type="text/javascript" src="../static/js/plugin-active.js"></script>
+   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+
+
+<!---최민혁 레이어드 인라인 프레임-->
+<link rel="stylesheet" type="text/css" href="http://lib.innocia.com/css/base.css" />
+<link rel="stylesheet" href="http://lib.innocia.com/css/common.css" />
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>      <!--요녀석이 문제임-->
+<script type="text/javascript" src="../static/js/jquery.smartPop.js"></script>
+<link rel="stylesheet" href="../static/css/jquery.smartPop.css" />
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    $('#sample2').click(function() {
+      $.smartPop.open({ width: 800, height: 500, url: 'https://bitcoinfaucet.uo1.net/' });
+    });
+
+  });
+</script>
+
+<style>
+   header {
+  height: 75px;
+  padding: 1rem;
+  color: #19af83;
+  background: whitesmoke;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+</style>
+
+
+<!--화면전환-->
+<script>
+   jQuery(function($) {
+   $("body").css("display", "none");
+   $("body").fadeIn(2000);
+   $("a.transition").click(function(event){
+   event.preventDefault();
+   linkLocation = this.href;
+   $("body").fadeOut(1000, redirectPage);
+   });
+   function redirectPage() {
+   window.location = linkLocation;
+   }
+   });
+   </script>
+<!--화면전환-->
+
+
+
+<!---최민혁 레이어드 인라인 프레임-->
+
+
+   <style>
+      #reset {
+         display: inline-block;
+         padding: 10px 30px;
+         background-color: #19af83;
+         border-radius: 28px;
+         color: #fff;
+         transition: all 0.25s ease 0s;
+         font: 400 16px/155% 'Open Sans', sans-serif;
+      }
+   </style>
+   <script>
+      var sum;
+      var pk;
+
+      function get_sum() {
+         var my_add_i = document.getElementById("my_add").value + document.getElementById("target_add").value + document.getElementById("price").value + document.getElementById("commission").value;
+         document.getElementById("privatekey").value = my_add_i;
+
+      }
+      function reset() {
+         document.getElementById("top").value = "";
+      }
+
+
+   </script>
+
+
+
+
+
+   <!--최민혁-->
+</head>
+
+<body>
+   <!-- Header starts here -->
+   <header>
+      <h1><a href="plugin/plugin_home.html" style="color: #19af83;">
+            <div>Bitowllet</div>
+         </a></h1>
+      <nav>
+         <span><i class="fab fa-earlybirds" style="font-size: 30px;"></i></span>
+      </nav>
+   </header>
+   <!-- Header ends here -->
+   <!-- Banner starts here -->
+   <section>
+      <div style="background-color: #19af83;"></div>
+   </section>
+
+   <br><br><br><br><br><br>
+   <!-- Banner ends here -->
+   <!-- Features section starts here -->
+   <section id="Gain">
+      <div class="container">
+         <div class="title text-center">
+            <h3 style="color: rgb(185, 185, 185);">You can use virtual currency</h3>
+            <p>This new type of currency have no goverment, no company, no any other infections.<br>
+               you can be insured your budget safety. Blockchain is contained by block and chain</p>
+         </div>
+         <br><br><br><br><br><br>
+         <hr><br><br><br><br><br><br>
+         <section id="ContactUs">
+            <div class="container contact-container">
+               <h3 class="contact-title" style="color: #19af83;"><strong>Send Bitcoin</strong> </h3>
+               <div class="contact-outer-wrapper">
+                  <div class="form-wrap">
+                     <p>You can send your Bitcoin by filling these factors</p>
+                     <form action="MAILTO:chlrhalsgur@naver.com" method="post" enctype="text/plain">
+                        <div class="fname floating-label">
+                           <input type="text" required class="floating-input" name="full name" />
+                           <label for="title">My Address</label>
+                        </div>
+                        <div class="email floating-label">
+                           <input type="text" required class="floating-input" name="email" />
+                           <label for="text">Target Address</label>
+                        </div>
+                        <div class="contact floating-label">
+                           <input type="text" class="floating-input" name="contact" />
+                           <label for="text" required>Price</label>
+                        </div>
+                        <div class="company floating-label">
+                           <input type="text" class="floating-input" name="company" />
+                           <label for="text">Commission</label>
+                        </div>
+
+                        <div class="submit-btn">
+                           <button type="submit">Submit</button>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="address-block">
+                     <p class="add-title">Contact information</p>
+                     <div class="c-detail">
+                        <div class="c-icon"><i class="fas fa-address-book" aria-hidden="true"></i></div>
+                        <div class="c-info">
+                           <h4>Address</h4>
+                           <p>Galmel building 32 Dongil-ro 214-gil, Sanggye 6(yuk).7(chil)-dong, Nowon-gu,
+                              Seoul</p>
+                        </div>
+                     </div>
+                     <div class="c-detail">
+                        <div class="c-icon"><i class="fas fa-phone-square" aria-hidden="true"></i></div>
+                        <div class="c-info">
+                           <h4>Mobile</h4>
+                           <p><a href="tell:+821045972044">(+82)1045972044</a></p>
+                        </div>
+                     </div>
+                     <div class="c-detail">
+                        <div class="c-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="c-info">
+                           <h4>Email</h4>
+                           <p><a href="chlrhalsgur0209@gmail.com">chlrhalsgur0209@gmail.com</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <br><br><br><br><br><br>
+         <hr><br><br><br><br><br><br>
+
+               <div class="each-icon box-1" style="background-color: white; box-shadow: 10px 5px 20px grey; width: 500px; border: 1px solid whitesmoke;  border-radius: 30px;">
+                  <div class="icon-wrap">
+                     <i style="color: #19af83;" class="fas fa-key"></i>
+                  </div>
+                  <div class="icon-text"><br>
+                     <h2 style="color: rgb(141, 141, 141);">Making New PrivateKey</h2><br>
+                     <p style="color:black">If you are the first at our service, you need to create new privatekey to use our wallet!</p>
+										 <!--김동완 wallet-->
+                               <p id="example">Creat Bitcoin Wallet</p><br>
+                               <center>
+										 <input style="display:block; border-left: white; border-right: white; border-top: white;"type="text" id="email1" placeholder="email1"> <br>
+										 <input style="display:block; border-left: white; border-right: white; border-top: white;"type="text" id="password1" placeholder="password"><br>
+                              </center>
+										 <input style="font-size: 20px; padding-top: 8px ; padding-bottom: 8px; background-color: #19af83;border: #fff; padding-right: 20px; padding-left: 20px; color: #fff; border-radius: 20px;" type="button" id="create" value="create">
+										 <script>
+										         $('#create').click(function(){
+										             var email = $('#email1').val();
+										             var password = $('#password1').val();
+										             var postdata = {
+										                 'email':email, 'password':password
+										             }
+										             $.ajax({
+										                 type: 'POST',
+										                 url: '{{url_for("CreatBitcoinWallet")}}',
+										                 data: JSON.stringify(postdata),
+										                 dataType : 'JSON',
+										                 contentType: "application/json",
+										                 success: function(data){
+										                     alert('address :' + data.result2['email']+"\nprivate key : "+ data.result2['password'])
+										                 },
+										                 error: function(request, status, error){
+										                     alert('ajax 통신 실패')
+										                     alert(error);
+										                 }
+										             })
+										         })
+										     </script>
+                     </p>
+                  </div>
+               </div>
+<br><br><br><br><br><br><hr><br><br><br><br><br><br><br>
+
+
+ 						 <!--김동완 wallet info-->
+							 <div class="each-icon box-2" style="background-color: white; box-shadow: 10px 5px 20px grey; width: 500px; border: 1px solid whitesmoke;  border-radius: 30px;">
+                  <div class="icon-wrap2">
+                     <i class="fas fa-key2"></i>
+                  </div>
+                  <div class="icon-text"><br>
+                     <h2><i class="fas fa-suitcase" style="color: #19af83; font-size: 50px;"></i></h2>
+                     <p style="color:grey"> <strong>Info my Bitcoin Wallet(address)</strong> </p><br>
+                      <!--김동완 wallet info-->
+                               <p id="example2">Address details</p><br>
+
+                               <center>
+										 <input style="display:block; border-top: #fff;border-left: #fff;border-right: #fff;"type="text" id="addr1" placeholder="addr1" >
+										<br> <input style="font-size: 20px; padding-top: 8px ; padding-bottom: 8px; background-color: #19af83;border: #fff; padding-right: 20px; padding-left: 20px; color: #fff; border-radius: 20px;" type="button" id="view" value="view">
+                              </center>
+                               <script>
+										         $('#view').click(function(){
+										             var addr = $('#addr1').val();
+										             var postdata2 = {
+                                   'addr':addr,
+                                   'balance':balance,
+                                   'total_sent':total_sent,
+                                   'total_received':total_received
+										             }
+										             $.ajax({
+										                 type: 'POST',
+										                 url: '{{url_for("InfoWallet")}}',
+										                 data: JSON.stringify(postdata2),
+										                 dataType : 'JSON',
+										                 contentType: "application/json",
+										                 success: function(data){
+                                       document.getElementById("").value=data.result2['addr']; // 입력한 내 주소
+                                       document.getElementById("").value=data.result2['balance']; // 남은 잔액
+                                       document.getElementById("").value=data.result2['total_sent']; // 전송 총량
+                                       document.getElementById("").value=data.result2['total_received']; // 리시브
+                                       alert('addr :' + data.result2['addr']+'\n'
+                                     +'balance :' + data.result2['balance']+'\n'
+                                   +'total_sent :' + data.result2['total_sent']+'\n'
+                                 +'total_received :' + data.result2['total_received']+'\n')
+                                   },
+										                 error: function(request, status, error){
+										                     alert('ajax 통신 실패')
+										                     alert(error);
+										                 }
+										             })
+										         })
+										     </script>
+
+
+                     </p>
+                  </div>
+               </div>
+
+
+
+               <br><br><hr><br><br><br><br><br><br>
+
+
+<div style="float: right;">
+   <div style="box-shadow: 10px 5px 20px grey; border: 1px solid whitesmoke;  border-radius: 30px; height: 600px; padding: 20px;" >
+         <center><br><br>
+            <h2 style="color: rgb(168, 168, 168);">Check my balance</h2>
+            <div>You can check your balance by following this link </div>
+            <br><br><br><br>
+
+
+
+               <input type="button" id="sample2" class="button" value=" "
+               style="background-image: url(../static/images/popup_img.PNG); width: 600px; height: 300px;">
+
+
+
+         </center>
+      </div>
+   </div>
+   </section>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <!-- Features section ends here -->
+   <br><br><br><br><br><br><br><br><br><br>
+   <hr><br><br><br><br><br><br>
+   <!-- video section starts here -->
+   <section id="Video">
+      <div class="image-wrap">
+         <picture>
+            <source media="(max-width: 767px)" srcset="../static/images/video1.jpg">
+            <img src="../static/images/video.jpg" alt="Video Thumbnail">
+         </picture>
+      </div>
+      <div class="video-icon">
+         <h3>Video</h3>
+         <p>
+            <br class="d-none d-lg-none d-xl-block" />Blockchain, New Generation Technology</p>
+         <a class="popup-youtube-wst" href="../static/images/Bitcoin_video.mp4"><i class="fas fa-play"></i></a>
+      </div>
+   </section>
+   <!-- video section ends here -->
+   <br><br><br><br><br><br>
+   <hr><br><br><br><br><br><br>
+   <!-- Footer section starts here -->
+   <footer id="Footer" style="background-color: whitesmoke;">
+      <div class="container text-center">
+         <div class="footer-text ">
+            <center>
+               <h2 style="color: #19af83;"> <strong> Administor</strong></h2>
+               <p style="color: #19af83;"> Dongwan Kim(back end&front end) <br>Donghyeon Park(back end)<br>Minhyeok
+                  Choi(front end)<br> </p>
+               <p style="color: #19af83;"> <strong> People who helped</strong></p>
+               <p style="color: #19af83;">Wonvin Kim(Advisor Professor of Korean Bible University)</p>
+
+            </center>
+            <div class="row">
+               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="copy-right">
+                     <p></p>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+                  <div class="social-share">
+                     <ul>
+                        <li>
+                           <a href="#"><i class="fab fa-facebook-f" style="color: #19af83;"></i></a>
+                        </li>
+                        <li>
+                           <a href="#"><i class="fab fa-twitter" style="color: #19af83;"></i></a>
+                        </li>
+                        <li>
+                           <a href="#"><i class="fab fa-linkedin-in" style="color: #19af83;"></i></a>
+                        </li>
+                        <li>
+                           <a href="#"><i class="fab fa-pinterest" style="color: #19af83;"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer section ends here -->
+</body>
+
+
+
+</html>

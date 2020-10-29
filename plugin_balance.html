@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blockchain based wallet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="static/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="static/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicons -->
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/custom-responsive-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../static/js/all-plugins.js"></script>
+  <script type="text/javascript" src="../static/js/plugin-active.js"></script>
+  <style>
+
+  </style>
+
+<script>
+  jQuery(function($) {
+  $("body").css("display", "none");
+  $("body").fadeIn(2000);
+  $("a.transition").click(function(event){
+  event.preventDefault();
+  linkLocation = this.href;
+  $("body").fadeOut(1000, redirectPage);
+  });
+  function redirectPage() {
+  window.location = linkLocation;
+  }
+  });
+  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	<script>
+		var gbBottomMenuVisible = true;
+
+		function body_scroll()
+		{
+			if( document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 )
+			{
+				if( gbBottomMenuVisible )
+				{
+                    // 모바일 웹을 하단으로 스크롤하면 하단 메뉴를 사라진다.
+					$('.bottom_menu').animate( { bottom:-50 }, 'slow' );
+					gbBottomMenuVisible = false;
+				}
+			}
+			else if( gbBottomMenuVisible == false )
+			{
+                // 모바일 웹이 상단으로 스크롤되면 하단 메뉴가 보여진다.
+				$('.bottom_menu').animate( { bottom:0 }, 'slow' );
+				gbBottomMenuVisible = true;
+			}
+		}
+
+   
+
+	</script>
+
+</head>
+
+<body  onscroll="body_scroll()" link="white" vlink="white" alink="silver" text="black" style="text-align: center;">
+  
+
+  <header>
+    <h1><a href="plugin_home.html"style="color: #19af83;"><div>Bitowllet</div></a></h1>
+    <nav>
+      <span><i class="fab fa-earlybirds" style="font-size: 30px;"></i></span>
+    </nav>
+  </header>
+  
+  <h1 style="margin-top: 30px; color: #19af83;">Balance</h1> <h1 style="color: #19af83;">3.0039 BTC</h1>
+  <img src="../static/images/qr.PNG" alt="qr_code">
+
+  <section id="ContactUs">
+    <div class="container contact-container">
+      <h3 class="contact-title">Send Bitcoin</h3>
+      <div class="contact-outer-wrapper">
+        <div class="form-wrap">
+          <p>If you have any problem or request, please leave this form. Then we will contact you as soon as posible:)</p>
+          <form action="MAILTO:chlrhalsgur@naver.com" method="post" enctype="text/plain">
+            <div class="fname floating-label">
+              <input type="text" required class="floating-input" name="full name" />
+              <label for="title">Full Name</label>
+            </div>
+            <div class="email floating-label">
+              <input type="email" required class="floating-input" name="email" />
+              <label for="email">Email</label>
+            </div>
+            <div class="contact floating-label">
+              <input type="tel" class="floating-input" name="contact" />
+              <label for="email" required>Contact</label>
+            </div>
+            <div class="company floating-label">
+              <input type="text" class="floating-input" name="company" />
+              <label for="email">Company</label>
+            </div>
+            <div class="user-msg floating-label">
+              <textarea type="text" class="floating-input" name="Message"></textarea>
+              <label for="message" class="msg-label">Your Message</label>
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="address-block">
+          <p class="add-title">Contact Details</p>
+          <div class="c-detail">
+            <div class="c-icon"><i class="fas fa-address-book" aria-hidden="true"></i></div>
+            <div class="c-info">
+              <h4>Address</h4>
+              <p>Galmel building 32 Dongil-ro 214-gil, Sanggye 6(yuk).7(chil)-dong, Nowon-gu, Seoul</p>
+            </div>
+          </div>
+          <div class="c-detail">
+            <div class="c-icon"><i class="fas fa-phone-square" aria-hidden="true"></i></div>
+            <div class="c-info">
+              <h4>Mobile</h4>
+              <p><a href="tell:+821045972044">(+82)1045972044</a></p>
+            </div>
+          </div>
+          <div class="c-detail">
+            <div class="c-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+            <div class="c-info">
+              <h4>Email</h4>
+              <p><a href="chlrhalsgur0209@gmail.com">chlrhalsgur0209@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bottom_menu"
+  style="border-top-color: #ffffff; border-top-width: 3px; background-color: whitesmoke; font-size: large; color: #19af83;">
+  <div id="item">
+    <a href="plugin_send.html" style="color: #19af83;"><i class="fas fa-paper-plane"></i></a>
+
+  </div>
+  <div id="item">
+    <a href="plugin_maketx.html" style="color: #19af83;"><i class="fas fa-key"></i></a>
+  </div>
+  <div id="item">
+    <a href="plugin_home.html" style="color: #19af83;"><i class="fas fa-home"></i></a>
+  </div>
+  <div id="item">
+    <a href="plugin_balance.html" style="color: #19af83;"><i class="fas fa-suitcase"></i></a>
+  </div>
+  <div id="item">
+    <a href="plugin_setting.html" style="color: #19af83;"><i class="fas fa-cogs"></i></a>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blockchain based wallet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="static/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="static/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicons -->
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/custom-responsive-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../static/js/all-plugins.js"></script>
+  <script type="text/javascript" src="../static/js/plugin-active.js"></script>
+  
+  
+
+  
+<!--화면전환-->
+<script>
+  jQuery(function($) {
+  $("body").css("display", "none");
+  $("body").fadeIn(2000);
+  $("a.transition").click(function(event){
+  event.preventDefault();
+  linkLocation = this.href;
+  $("body").fadeOut(1000, redirectPage);
+  });
+  function redirectPage() {
+  window.location = linkLocation;
+  }
+  });
+  </script>
+
+
+  <style>
+    .content{
+      color: #19af83;
+      display: inline-block;
+      margin-left: 0;
+      font-size: 100px;
+      padding: 50px;
+      
+    }
+    .item{
+      margin-left: 0;
+    }
+    #t_d{
+      margin-left: 0px;
+    }
+    #t_d_1_1 :hover,
+    #t_d_2_1 :hover,
+    #t_d_1_2 :hover,
+    #t_d_3_2 :hover,
+    #t_d_3_1 :hover,
+    #t_d_2_2 :hover{
+      background-color: whitesmoke;
+      cursor: pointer;
+    }
+    #t_d_1_1 :active,
+    #t_d_2_1 :active,
+    #t_d_1_2 :active,
+    #t_d_3_2 :active,
+    #t_d_3_1 :active,
+    #t_d_2_2 :active{
+      background-color: rgb(177, 177, 177);
+    }
+    
+
+
+  </style>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<style>
+	</style>
+	<script>
+		var gbBottomMenuVisible = true;
+
+		function body_scroll()
+		{
+			if( document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 )
+			{
+				if( gbBottomMenuVisible )
+				{
+                    // 모바일 웹을 하단으로 스크롤하면 하단 메뉴를 사라진다.
+					$('.bottom_menu').animate( { bottom:-50 }, 'slow' );
+					gbBottomMenuVisible = false;
+				}
+			}
+			else if( gbBottomMenuVisible == false )
+			{
+                // 모바일 웹이 상단으로 스크롤되면 하단 메뉴가 보여진다.
+				$('.bottom_menu').animate( { bottom:0 }, 'slow' );
+				gbBottomMenuVisible = true;
+			}
+		}
+
+   
+
+	</script>
+
+</head>
+
+<body  onscroll="body_scroll()" link="white" vlink="white" alink="silver" text="black" style="text-align: center;">
+  
+
+
+  <header>
+    <h1><a href="plugin_home.html"style="color: #19af83;"><div>Bitowllet</div></a></h1>
+    <nav>
+      <span><i class="fab fa-earlybirds" style="font-size: 30px;"></i></span>
+    </nav>
+  </header>
+  <br>
+  <h1 style="margin-top: 30px; color: #19af83;">Setting</h1> <h1 style="color: #19af83;"></h1>
+  
+  </section>
+<br><br><br><hr>
+<center>
+<section>
+<table>
+  <tr>
+    <td id="t_d_1_1">
+      <div class="content"><a href="plugin_set_tools.html">
+        <i style="color:#19af83 ;" class="fas fa-wrench"></i></a>    
+      </div>
+    </td>
+    <td id="t_d_1_2">
+      <div class="content"><a href="plugin_set_language.html">
+        <i style="color:#19af83 ;" tyle="color:#19af83"class="fas fa-globe"></i></a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td id="t_d_2_1">
+      <div class="content"><a href="plugin_set_info.html">
+        <i style="color:#19af83 ;" tyle="color:#19af83" class="fas fa-info-circle"></i></a>
+      </div>
+    </td>
+    <td id="t_d_2_2">
+      <div class="content"><a href="plugin_set_administor.html">
+        <i style="color:#19af83 ;" class="fas fa-users"></i></a>
+      </div>
+    </td>
+  </tr>
+    <tr>
+    <td id="t_d_3_1">
+      <div class="content"><a href="index.html" target="_blank" style="color: #19af83;">
+        <i class="far fa-window-restore"></i></a> 
+      </div>
+    </td>
+    <td id="t_d_3_2">
+      <div class="content"><a href="plugin_set_graph.html">
+        <i style="color:#19af83 ;" class="fas fa-chart-line"></i></a>
+      </div>
+    </td>
+  </tr>
+</table>
+</section>
+</center>
+
+
+
+
+
+<div class="bottom_menu"
+style="border-top-color: #ffffff; border-top-width: 3px; background-color: whitesmoke; font-size: large; color: #19af83;">
+<div id="item">
+  <a href="plugin_send.html" style="color: #19af83;"><i class="fas fa-paper-plane"></i></a>
+
+</div>
+<div id="item">
+  <a href="plugin_maketx.html" style="color: #19af83;"><i class="fas fa-key"></i></a>
+</div>
+<div id="item">
+  <a href="plugin_home.html" style="color: #19af83;"><i class="fas fa-home"></i></a>
+</div>
+<div id="item">
+  <a href="plugin_balance.html" style="color: #19af83;"><i class="fas fa-suitcase"></i></a>
+</div>
+<div id="item">
+  <a href="plugin_setting.html" style="color: #19af83;"><i class="fas fa-cogs"></i></a>
+</div>
+</div>
+</body>
+</html>

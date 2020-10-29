@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blockchain based wallet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="static/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="static/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicons -->
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/custom-responsive-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../static/js/all-plugins.js"></script>
+  <script type="text/javascript" src="../static/js/plugin-active.js"></script>
+  <style>
+
+  </style>
+
+
+<!--화면전환-->
+<script>
+  jQuery(function($) {
+  $("body").css("display", "none");
+  $("body").fadeIn(2000);
+  $("a.transition").click(function(event){
+  event.preventDefault();
+  linkLocation = this.href;
+  $("body").fadeOut(1000, redirectPage);
+  });
+  function redirectPage() {
+  window.location = linkLocation;
+  }
+  });
+  </script>
+  
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <style>
+  </style>
+  <script>
+    var gbBottomMenuVisible = true;
+
+    function body_scroll() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if (gbBottomMenuVisible) {
+          // 모바일 웹을 하단으로 스크롤하면 하단 메뉴를 사라진다.
+          $('.bottom_menu').animate({ bottom: -50 }, 'slow');
+          gbBottomMenuVisible = false;
+        }
+      }
+      else if (gbBottomMenuVisible == false) {
+        // 모바일 웹이 상단으로 스크롤되면 하단 메뉴가 보여진다.
+        $('.bottom_menu').animate({ bottom: 0 }, 'slow');
+        gbBottomMenuVisible = true;
+      }
+    }
+
+
+
+  </script>
+
+</head>
+
+<body onscroll="body_scroll()" link="white" vlink="white" alink="silver" text="black" style="text-align: center;">
+
+
+
+  <header>
+    <h1><a href="plugin_home.html"style="color: #19af83;"><div>Bitowllet</div></a></h1>
+    <nav>
+      <span><i class="fab fa-earlybirds" style="font-size: 30px;"></i></span>
+    </nav>
+  </header>
+  
+  
+  <section id="Gain">
+    <div class="container">
+      <div class="title text-center">
+        <h1><strong>This platform is bitcoin wallet sevice based on blockchain.</strong></h1>
+        <p>This new type of currency have<strong> <br> no goverment<br> no company<br> no any other infections.<br></strong>
+          you can be insured your budget safety.<br> Blockchain is contained by block and chain</p>
+          <hr>
+          <p>
+            Bitcoin (₿) is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto and started in 2009 when its implementation was released as open-source software.ch. 1
+
+It is a decentralized digital currency without a central bank or single administrator that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries.Transactions are verified by network nodes through cryptography and recorded in a public distributed ledger called a blockchain. Bitcoins are created as a reward for a process known as mining. They can be exchanged for other currencies, products, and services. Research produced by University of Cambridge estimates that in 2017, there were 2.9 to 5.8 million unique users using a cryptocurrency wallet, most of them using bitcoin.
+
+Bitcoin has been praised and criticized. Critics noted its use in illegal transactions, the large amount of electricity used by miners, price volatility, and thefts from exchanges. Some economists, including several Nobel laureates, have characterized it as a speculative bubble. Bitcoin has also been used as an investment, although several regulatory agencies have issued investor alerts about bitcoin.
+          </p>
+       
+      </div>
+    </div>
+  </section>
+
+
+ 
+  <div class="bottom_menu"
+    style="border-top-color: #ffffff; border-top-width: 3px; background-color: whitesmoke; font-size: large; color: #19af83;">
+    <div id="item">
+      <a href="plugin_send.html" style="color: #19af83;"><i class="fas fa-paper-plane"></i></a>
+
+    </div>
+    <div id="item">
+      <a href="plugin_maketx.html" style="color: #19af83;"><i class="fas fa-key"></i></a>
+    </div>
+    <div id="item">
+      <a href="plugin_home.html" style="color: #19af83;"><i class="fas fa-home"></i></a>
+    </div>
+    <div id="item">
+      <a href="plugin_balance.html" style="color: #19af83;"><i class="fas fa-suitcase"></i></a>
+    </div>
+    <div id="item">
+      <a href="plugin_setting.html" style="color: #19af83;"><i class="fas fa-cogs"></i></a>
+    </div>
+  </div>
+</body>
+
+</html>
